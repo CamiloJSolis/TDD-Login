@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna y legible */
+  background: linear-gradient(135deg, #f9fafc, #dce3f0); /* Gradiente sutil de fondo */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  color: #1f2937; /* Color de texto principal */
+  padding: 1rem;
+}
+
+.container {
+    width: 420px;
+    background-color: #ffffff;
+    color: #1f2937;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.container h5{
+    font-size: 15px;
+    font-weight: normal;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.input-field:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.btn-signin {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-signin:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.btn-signin:hover:not(:disabled){
+    background: #2563eb;
+}
+
+.input-box p {
+  color: #dc2626;  /* red-600 */
+  font-size: 13px;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;      
+    padding: 1.5rem;       
+    box-shadow: none;       
+  }
+
+  .input-field {
+    width: 100%;          
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn-signin {
+    width: 100%;            
+    margin: 1rem 0 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 480px;  
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .input-field {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
